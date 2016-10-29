@@ -19,23 +19,23 @@ Installation
 
  This image is available on DockerHub. To download it run:
 
-    ```
-    $ docker pull thedigitalgarage/mysql-55-centos7
-    ```
+  ```
+   $ docker pull thedigitalgarage/mysql-55-centos7
+  ```
 
  or
 
-    ```
-    $ docker pull thedigitalgarage/mysql-56-centos7
-    ```
+  ```
+   $ docker pull thedigitalgarage/mysql-56-centos7
+  ```
 
  To build a MySQL image from scratch run:
 
-    ```
-    $ git clone https://github.com/thedigitalgarage/mysql.git
-    $ cd mysql
-    $ make build VERSION=5.5
-    ```
+  ```
+   $ git clone https://github.com/thedigitalgarage/mysql.git
+   $ cd mysql
+   $ make build VERSION=5.5
+  ```
 
 For using other versions of mysql, just replace the `5.5` value by particular version
 in the commands above.
@@ -61,10 +61,10 @@ Test
 This repository also provides a test framework, which checks basic functionality
 of the MySQL image.
 
-    ```
-    $ cd mysql
-    $ make test VERSION=5.5
-    ```
+  ```
+   $ cd mysql
+   $ make test VERSION=5.5
+  ```
 
 For using other versions of mysql, just replace the `5.5` value by particular version
 in the commands above.
