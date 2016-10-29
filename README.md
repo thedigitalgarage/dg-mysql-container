@@ -17,19 +17,19 @@ MySQL versions currently provided are:
 Installation
 ----------------------
 
-    This image is available on DockerHub. To download it run:
+ This image is available on DockerHub. To download it run:
 
     ```
     $ docker pull thedigitalgarage/mysql-55-centos7
     ```
 
-    or
+ or
 
     ```
     $ docker pull thedigitalgarage/mysql-56-centos7
     ```
 
-    To build a MySQL image from scratch run:
+ To build a MySQL image from scratch run:
 
     ```
     $ git clone https://github.com/thedigitalgarage/mysql.git
