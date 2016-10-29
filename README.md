@@ -1,11 +1,10 @@
 MySQL Docker images
 ===================
 
-This repository contains Dockerfiles for MySQL images for OpenShift.
-Users can choose between RHEL and CentOS based images.
+This repository contains Dockerfiles for MySQL images for the Digital Garage.
 
 For more information about using these images with OpenShift, please see the
-official [OpenShift Documentation](https://docs.openshift.org/latest/using_images/db_images/mysql.html).
+official [Digital Garage Documentation](https://docs.thedigitalgarage.io/using_images/db_images/mysql.html)
 
 
 Versions
@@ -14,46 +13,26 @@ MySQL versions currently provided are:
 * mysql-5.5
 * mysql-5.6
 
-RHEL versions currently supported are:
-* RHEL7
-
-CentOS versions currently supported are:
-* CentOS7
-
 
 Installation
 ----------------------
-Choose either the CentOS7 or RHEL7 based image:
-
-*  **RHEL7 based image**
-
-    To build a RHEL7 based image, you need to run Docker build on a properly
-    subscribed RHEL machine.
-
-    ```
-    $ git clone https://github.com/openshift/mysql.git
-    $ cd mysql
-    $ make build TARGET=rhel7 VERSION=5.5
-    ```
-
-*  **CentOS7 based image**
 
     This image is available on DockerHub. To download it run:
 
     ```
-    $ docker pull openshift/mysql-55-centos7
+    $ docker pull thedigitalgarage/mysql-55-centos7
     ```
 
     or
 
     ```
-    $ docker pull centos/mysql-56-centos7
+    $ docker pull thedigitalgarage/mysql-56-centos7
     ```
 
     To build a MySQL image from scratch run:
 
     ```
-    $ git clone https://github.com/openshift/mysql.git
+    $ git clone https://github.com/thedigitalgarage/mysql.git
     $ cd mysql
     $ make build VERSION=5.5
     ```
@@ -81,20 +60,6 @@ Test
 
 This repository also provides a test framework, which checks basic functionality
 of the MySQL image.
-
-Users can choose between testing MySQL based on a RHEL or CentOS image.
-
-*  **RHEL based image**
-
-    To test a RHEL7 based MySQL image, you need to run the test on a properly
-    subscribed RHEL machine.
-
-    ```
-    $ cd mysql
-    $ make test TARGET=rhel7 VERSION=5.5
-    ```
-
-*  **CentOS based image**
 
     ```
     $ cd mysql
